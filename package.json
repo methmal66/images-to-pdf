@@ -15,6 +15,7 @@
       "@babel/core": "^7.12.10",
       "@babel/preset-env": "^7.12.11",
       "@babel/preset-typescript": "^7.12.7",
+      "@types/inquirer": "^8.1.2",
       "@types/jest": "^26.0.19",
       "@types/node": "^14.14.14",
       "@typescript-eslint/eslint-plugin": "^4.11.0",
@@ -29,9 +30,12 @@
    },
    "scripts": {
       "start": "ts-node src/index.ts",
-      "test": "yarn lint:types && jest --no-cache",
+      "test": "clear && jest --no-cache",
       "lint": "yarn lint:types && yarn lint:ci",
       "lint:types": "yarn tsc --noEmit -p .",
       "lint:ci": "eslint . --ext .tsx,.ts"
+   },
+   "dependencies": {
+      "inquirer": "^8.1.5"
    }
 }
