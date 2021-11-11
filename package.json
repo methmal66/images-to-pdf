@@ -35,10 +35,11 @@
       "test": "jest --no-cache",
       "lint": "yarn lint:types && yarn lint:ci",
       "lint:types": "yarn tsc --noEmit -p .",
-      "lint:ci": "eslint . --ext .tsx,.ts"
+      "lint:ci": "eslint . --ext .tsx,.ts",
+      "build": "tsc"
    },
    "bin": {
-      "images-to-pdf": "src/index.ts"
+      "images-to-pdf": "bin/src/index.js"
    },
    "dependencies": {
       "image-size": "^1.0.0",
