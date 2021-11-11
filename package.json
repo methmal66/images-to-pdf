@@ -37,6 +37,9 @@
       "lint:types": "yarn tsc --noEmit -p .",
       "lint:ci": "eslint . --ext .tsx,.ts"
    },
+   "bin": {
+      "images-to-pdf": "src/index.ts"
+   },
    "dependencies": {
       "image-size": "^1.0.0",
       "inquirer": "^8.1.5",
