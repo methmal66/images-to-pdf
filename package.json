@@ -36,7 +36,7 @@
       "lint": "yarn lint:types && yarn lint:ci",
       "lint:types": "yarn tsc --noEmit -p .",
       "lint:ci": "eslint . --ext .tsx,.ts",
-      "build": "tsc && rm -r ./bin/test && mv ./bin/src/* ./bin && rmdir ./bin/src"
+      "bin": "tsc && rm -r ./bin/test && mv ./bin/src/* ./bin && rmdir ./bin/src"
    },
    "bin": {
       "images-to-pdf": "bin/src/index.js"
