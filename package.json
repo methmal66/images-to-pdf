@@ -1,6 +1,7 @@
 {
-   "name": "images-to-pdf",
+   "name": "@methmal/images-to-pdf",
    "description": "Simple typescript cli utility to combine multiple images into single pdf",
+   "version": "1.0.0",
    "private": false,
    "repository": {
       "type": "git",
